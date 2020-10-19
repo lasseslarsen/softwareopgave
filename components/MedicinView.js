@@ -7,6 +7,8 @@ import img4 from '/Users/Lasse/Desktop/sites/SoftwareOpgave/assets/panodil-zapp.
 
 export default class ScrollViewScreen extends Component{
 
+  //View for den enklte medicin
+  //Der bliver brugt flere forskellige Text styles
   render() {
     return(
       <View style={styles.container}>

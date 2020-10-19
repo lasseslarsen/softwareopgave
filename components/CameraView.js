@@ -4,14 +4,10 @@ import {
   View,
   StyleSheet,
   SafeAreaView,
-  Linking,
-  FlatList,
   Button,
-  Image,
 } from 'react-native';
 import { Camera } from 'expo-camera';
 import * as Permissions from 'expo-permissions';
-import {Icon} from "expo/build/removed.web";
 
 
 
@@ -31,6 +27,8 @@ export default class App extends React.Component {
     this.setState({ hasCameraPermission: status === 'granted' });
   };
 
+  //Knappen der skal bruges til at scanne medicinen
+  //I denne kode sender den brugeren videre til MedicinView
   handleScanMedicin = async () => {
     if (!this.cameraRef.current) {
       return;
@@ -40,6 +38,7 @@ export default class App extends React.Component {
     console.log({ result });
   };
 
+  //Tjekker om der er givet adgang til kameraet
   renderCameraView() {
     const { hasCameraPermission, type } = this.state;
     if (hasCameraPermission === null) {
@@ -74,11 +73,6 @@ export default class App extends React.Component {
   }
 
 }
-
-
-
-
-
 
 
 const containerStyle = {

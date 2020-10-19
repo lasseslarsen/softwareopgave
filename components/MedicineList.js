@@ -7,10 +7,12 @@ import img4 from '/Users/Lasse/Desktop/sites/SoftwareOpgave/assets/panodil-zapp.
 
 export default class ScrollViewScreen extends Component{
 
+  //Handler til at sende brugeren videre når de trykker på et objekt.
   handleClick = () => {
     this.props.navigation.navigate('MedicinView')
   }
 
+  // Et ScrollView med Touchable
   render() {
     return(
       <View style={styles.container}>

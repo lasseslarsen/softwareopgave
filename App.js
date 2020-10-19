@@ -26,20 +26,6 @@ const stackNavigator = createStackNavigator({
   }
 );
 
-const stackNavigator1 = createStackNavigator({
-    /*Fra venstre er det side navnet og screen er vores View / component*/
-    CameraView: { screen: CameraView },
-    MedicinView:{screen: MedicinView}
-  },
-  {
-    /*Hvilket View skal starte*/
-    initialRouteName:'MedicineList',
-    navigationOptions:{
-      title:'Medicin liste'
-    }
-  }
-);
-
 // Denne TabNavigator holder styr på det yderste niveau af navigation i appen.
 const TabNavigator = createBottomTabNavigator(
   {

@@ -1,9 +1,9 @@
 import React,{Component} from 'react';
 import {Text, View, ScrollView, StyleSheet, Image, TouchableOpacity} from 'react-native';
-import img from '/Users/Lasse/Desktop/sites/softwareopgave3/assets/panodil.jpg';
-import img2 from '/Users/Lasse/Desktop/sites/softwareopgave3/assets/panodil-extra.jpg';
-import img3 from '/Users/Lasse/Desktop/sites/softwareopgave3/assets/panodil-hot.jpg';
-import img4 from '/Users/Lasse/Desktop/sites/softwareopgave3/assets/panodil-zapp.jpg';
+import img from '/Users/Lasse/Desktop/sites/softwareopgave/assets/panodil.jpg';
+import img2 from '/Users/Lasse/Desktop/sites/softwareopgave/assets/panodil-extra.jpg';
+import img3 from '/Users/Lasse/Desktop/sites/softwareopgave/assets/panodil-hot.jpg';
+import img4 from '/Users/Lasse/Desktop/sites/softwareopgave/assets/panodil-zapp.jpg';
 
 export default class ScrollViewScreen extends Component{
 
